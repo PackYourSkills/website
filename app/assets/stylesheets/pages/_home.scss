@@ -2,3 +2,49 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+
+/*-----------------------------------------------------------------------
+/*  Theme Name  : Pack Your Skills by Milica
+/*  Version     : 1.O
+/*-----------------------------------------------------------------------
+
+-----------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------*/
+/*  0. GLOBAL STYLES
+/*---------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------*/
+/*  1. BANNER PART
+/*---------------------------------------------------------------------*/
+
+#banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/banner_home_PackYourSkills.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  h1, p {
+    color: white;
+  }
+}
+
+#bannercontainer{
+  width: 100%;
+  height: 110vh;
+
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 20vh;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
+  background-image: url("/white-wave_banner_home_PackYourSkills.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
