@@ -18,17 +18,22 @@
 /*  1. BANNER PART
 /*---------------------------------------------------------------------*/
 
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+.container{
+
+}
+
 #banner {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   background-image: url("/banner_home_PackYourSkills.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
-
-  h1, p {
-    color: white;
-  }
+  background-position: bottom center;
+  background-size: cover;
 }
 
 #bannercontainer{
@@ -39,12 +44,95 @@
   margin-right: 0px;
   padding-left: 0px;
   padding-right: 0px;
-  padding-top: 20vh;
   position: absolute;
   left: 0px;
   top: 0px;
+}
 
-  background-image: url("/white-wave_banner_home_PackYourSkills.png");
+#bannerheader{
+  height: 20vh;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align:center;
+  a {
+    color: black;
+    font-size: 9px;
+  }
+}
+
+#shapeheader{
+  height: 11vh;
+  background-image: url("/banner_home_PackYourSkills_shape_header.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  img {
+    height:9vh;
+    width:auto;
+    display: block;
+    margin: auto;
+    padding-top:1vh;
+  }
+}
+
+#bannertitle{
+  height: 60vh;
+  margin-left: 0px;
+  margin-right: 0px;
+  h1, h2, h3, p {
+    color: white;
+    margin:0px;
+    padding-left:5px;
+  }
+  h1{
+    font-size: 72px;
+    font-weight: bold;
+
+    img {
+      height:72px;
+      width:auto;
+      padding-bottom:10px;
+      margin-left:10px;
+    }
+  }
+  h2{
+    font-size: 54px;
+    img {
+      height:54px;
+      width:auto;
+      padding-bottom:10px;
+    }
+  }
+  p{
+    font-size: 18px;
+    margin-bottom:15px;
+  }
+
+  a{
+    text-transform: uppercase;
+    color: white;
+    font-size:30px;
+    text-decoration:none;
+    border: solid 1px white;
+    margin-left:5px;
+    padding:5px 80px 5px 80px;
+  }
+  a:hover {
+    color: rgba(0,0,0,1);
+    border: solid 1px rgba(255,255,255,0.5);
+    background-color:rgba(255,255,255,0.5);
+  }
+}
+
+#bannerfooter{
+  height: 30vh;
+  width:100%;
+  background-image: url("/banner_home_PackYourSkills_white-wave.png");
   background-repeat: no-repeat;
   background-position: bottom right;
+  background-size: cover;
+  position:absolute;
+  bottom:0;
+  right:0;
 }
