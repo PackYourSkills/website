@@ -23,13 +23,21 @@ h1, h2, h3 {
 }
 
 .container{
+  margin:0px;
+  padding:0px;
+  width: 100%;
+}
 
+.row{
+  margin:0px;
+  padding:0px;
+  height-min:5px;
 }
 
 #banner {
   position: relative;
   width: 100%;
-  height: 110vh;
+  height: 105vh;
   background-image: url("/banner_home_PackYourSkills.jpg");
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -38,12 +46,7 @@ h1, h2, h3 {
 
 #bannercontainer{
   width: 100%;
-  height: 110vh;
-
-  margin-left: 0px;
-  margin-right: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  height: 105vh;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -52,8 +55,6 @@ h1, h2, h3 {
 #bannerheader{
   height: 20vh;
   width: 100%;
-  margin-left: 0px;
-  margin-right: 0px;
   text-align:center;
   a {
     color: black;
@@ -65,8 +66,8 @@ h1, h2, h3 {
   height: 11vh;
   background-image: url("/banner_home_PackYourSkills_shape_header.png");
   background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
+  background-position: bottom center;
+  background-height: cover;
   img {
     height:9vh;
     width:auto;
@@ -77,7 +78,7 @@ h1, h2, h3 {
 }
 
 #bannertitle{
-  height: 60vh;
+  height: 50vh;
   margin-left: 0px;
   margin-right: 0px;
   h1, h2, h3, p {
@@ -131,8 +132,220 @@ h1, h2, h3 {
   background-image: url("/banner_home_PackYourSkills_white-wave.png");
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-size: cover;
+  background-size: 100% auto;
+  text-align:center;
   position:absolute;
   bottom:0;
   right:0;
+  a {
+    position:absolute;
+    bottom:10vh;
+  }
 }
+
+/*---------------------------------------------------------------------*/
+/*  2. VISON PART
+/*---------------------------------------------------------------------*/
+
+#vision {
+}
+
+#visioncontainer {
+  position: relative;
+  height-min: 30vh;
+  width: 100%;
+  img {
+    height:30vh;
+    width:auto;
+    display: block;
+    margin:auto;
+  }
+  #yellow_shape {
+    img {
+      margin:0px;
+      height:20vh;
+      width:auto;
+      position:absolute;
+      left:0px;
+      top:-5vh;
+    }
+  }
+  #green_shape {
+    z-index:-1;
+    img {
+      margin:0px;
+      height:60vh;
+      width:auto;
+      position:absolute;
+      left:0px;
+      bottom:-50vh;
+    }
+  }
+  .transition {
+    img {
+      margin:auto;
+      height:auto;
+      width:80%;
+    }
+  }
+}
+
+
+/*---------------------------------------------------------------------*/
+/*  3. CONCEPT PART
+/*---------------------------------------------------------------------*/
+
+#concept {
+  position: relative;
+}
+
+#conceptcontainer {
+  height-min: 40vh;
+  width: 100%;
+  img {
+    height:auto;
+    width:100%;
+    display: block;
+    margin:auto;
+    padding:5px;
+    position:absolute;
+    left:0px;
+    top:-15vh;
+  }
+  #red_shape {
+    z-index:-1;
+    img {
+      margin:0px;
+      padding:0px;
+      height:100vh;
+      width:auto;
+      position:absolute;
+      left:auto;
+      right:0px;
+      top:-30vh;
+    }
+  }
+  .transition {
+    img {
+      position:relative;
+      margin:auto;
+      height:auto;
+      width:80%;
+      top:0;
+    }
+  }
+}
+
+/*---------------------------------------------------------------------*/
+/*  3. JOURNEY PART
+/*---------------------------------------------------------------------*/
+
+#journey {
+  position: relative;
+  text-align: center;
+}
+
+#journeycontainer {
+  height-min: 40vh;
+  width: 100%;
+  #blue_shape {
+    z-index:-1;
+    img {
+      margin:0px;
+      padding:0px;
+      height:40vh;
+      width:auto;
+      position:absolute;
+      left:0;
+    }
+  }
+  #illustrationcontainer{
+    margin-left:5%;
+    margin-right:5%;
+    width:90%;
+    .illustration {
+      img {
+        position:relative;
+        margin:auto;
+        height:20vh;
+        width:auto;
+        top:0;
+      }
+    }
+    .arrow {
+      img {
+        margin-top:8vh;
+        height:auto;
+        width:100%;
+      }
+    }
+  }
+  .transition {
+    img {
+      position:relative;
+      margin:auto;
+      height:auto;
+      width:80%;
+      top:-5vh;
+    }
+  }
+}
+
+/*---------------------------------------------------------------------*/
+/*  3. WHO ARE YOU PART
+/*---------------------------------------------------------------------*/
+
+#whoareyou {
+  position: relative;
+  text-align: center;
+  margin-top:5vh;
+}
+
+#whoareyoucontainer {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/home_PackYourSkills_whoareyou_blueshape.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto 100vh;
+    .illustration {
+      img {
+        display: block;
+        margin:auto;
+        height:auto;
+        width:100%;
+      }
+    }
+  .transition {
+    img {
+      position:relative;
+      margin:auto;
+      height:auto;
+      width:80%;
+      top:-5vh;
+    }
+  }
+
+  a{
+    text-transform: uppercase;
+    color: white;
+    font-size:30px;
+    text-decoration:none;
+    border: solid 1px white;
+    margin-left:5px;
+    padding:5px 80px 5px 80px;
+  }
+  a:hover {
+    color: rgba(0,0,0,1);
+    border: solid 1px rgba(255,255,255,0.5);
+    background-color:rgba(255,255,255,0.5);
+  }
+}
+
+
+
+
+
+
+
+
